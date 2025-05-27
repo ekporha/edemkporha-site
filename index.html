@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,137 +5,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edem Kporha | Technical Support & DevOps Consultant</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+  <style>
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .animated-gradient {
+      background: linear-gradient(-45deg, #1e293b, #0f172a, #1e3a8a, #0ea5e9);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <main class="min-h-screen p-6">
-    
+<body class="animated-gradient text-gray-100 font-sans">
+  <main class="min-h-screen px-6 py-12 max-w-6xl mx-auto">
     <header class="text-center mb-12">
-      <img src="profile.jpg" alt="Edem Kporha" class="mx-auto w-32 h-32 rounded-full border-4 border-blue-500 mb-4" />
-    
-      <h1 class="text-4xl font-bold text-blue-700">Edem Kporha</h1>
+      <img src="profile.jpg" alt="Edem Kporha" class="mx-auto w-32 h-32 rounded-full border-4 border-cyan-400 mb-4" />
+      <h1 class="text-4xl font-bold text-cyan-300">Edem Kporha</h1>
       <p class="text-lg mt-2">Technical Support Engineer | DevOps Consultant</p>
-      <p class="mt-1 text-sm text-gray-600">Canyon Country, CA | edem.kporha@gmail.com | (213) 995-7170</p>
-      <a href="https://www.linkedin.com/in/edemkporha/" target="_blank" class="text-blue-500 hover:underline mt-1 block">
-        LinkedIn Profile
+      <p class="mt-1 text-sm text-gray-300">Canyon Country, CA | edem.kporha@gmail.com | (213) 995-7170</p>
+      <a href="https://www.linkedin.com/in/edemkporha/" target="_blank" class="text-cyan-400 hover:underline mt-1 block">
+        <i class="fab fa-linkedin"></i> LinkedIn Profile
       </a>
     </header>
 
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2">Professional Summary</h2>
-      <p class="mt-4">
-        Technical Support Engineer with 5+ years of experience resolving escalated issues across SQL-based systems,
-        virtualized environments, and distributed networks. Skilled in root cause analysis, monitoring, incident
-        management, and customer-centric support within finance and cloud-based platforms.
-      </p>
+      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+        <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
+          <i class="fas fa-user-tie"></i> Professional Summary
+        </h2>
+        <p class="mt-4 text-gray-300 leading-relaxed">
+          Technical Support Engineer with 5+ years of experience resolving escalated issues across SQL-based systems,
+          virtualized environments, and distributed networks. Skilled in root cause analysis, monitoring, incident
+          management, and customer-centric support within finance and cloud-based platforms.
+        </p>
+      </div>
     </section>
 
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2">Core Competencies</h2>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4 list-disc list-inside">
-        <li>Technical Support & RCA (Tier 1/2)</li>
-        <li>SQL (PostgreSQL, MySQL, MS SQL)</li>
-        <li>Linux Systems & Shell Scripting</li>
-        <li>ITIL, SLA Compliance</li>
-        <li>Monitoring: Grafana, Prometheus, Nagios</li>
-        <li>API Debugging: REST, MQ, WebLogic</li>
-      </ul>
+      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+        <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
+          <i class="fas fa-cogs"></i> Core Competencies
+        </h2>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-4 list-disc list-inside text-gray-300">
+          <li>Technical Support & RCA (Tier 1/2)</li>
+          <li>SQL (PostgreSQL, MySQL, MS SQL)</li>
+          <li>Linux Systems & Shell Scripting</li>
+          <li>ITIL, SLA Compliance</li>
+          <li>Monitoring: Grafana, Prometheus, Nagios</li>
+          <li>API Debugging: REST, MQ, WebLogic</li>
+        </ul>
+      </div>
     </section>
 
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2">Professional Experience</h2>
-      <div class="mt-4 space-y-6">
-        <div>
-          <h3 class="font-bold text-lg">Freelance Technical Consultant – Remote</h3>
-          <p class="text-sm text-gray-500">Oct 2024 – Present</p>
-          <ul class="list-disc list-inside mt-2">
-            <li>Advised SMEs on system architecture and cloud optimization.</li>
-            <li>Deployed monitoring tools reducing MTTR by 35%.</li>
-            <li>Led RCA and built knowledgebase articles to streamline support.</li>
-          </ul>
+      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+        <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
+          <i class="fas fa-briefcase"></i> Professional Experience
+        </h2>
+        <div class="mt-4 space-y-6 text-gray-300">
+          <div>
+            <h3 class="font-bold text-lg text-cyan-300">Freelance Technical Consultant – Remote</h3>
+            <p class="text-sm text-gray-400">Oct 2024 – Present</p>
+            <ul class="list-disc list-inside mt-2">
+              <li>Advised SMEs on system architecture and cloud optimization.</li>
+              <li>Deployed monitoring tools reducing MTTR by 35%.</li>
+              <li>Led RCA and built knowledgebase articles to streamline support.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-cyan-300">Application Support Engineer – Armedia LLC</h3>
+            <p class="text-sm text-gray-400">Jul 2023 – Sep 2024</p>
+            <ul class="list-disc list-inside mt-2">
+              <li>Resolved L2/L3 support issues with 99.9% uptime assurance.</li>
+              <li>Automated diagnostics, reducing troubleshooting time by 40%.</li>
+              <li>Improved backend performance via SQL tuning and documentation.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-cyan-300">Technical Operations Engineer – Binance</h3>
+            <p class="text-sm text-gray-400">Feb 2022 – Jun 2023</p>
+            <ul class="list-disc list-inside mt-2">
+              <li>Maintained HA trading systems and improved API latency.</li>
+              <li>Integrated observability tools reducing incidents by 20%.</li>
+              <li>Created runbooks and collaborated with product teams.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-cyan-300">Team Lead & Support Engineer – Ecobank</h3>
+            <p class="text-sm text-gray-400">Oct 2016 – Feb 2022</p>
+            <ul class="list-disc list-inside mt-2">
+              <li>Led Tier 1–2 support across 33 African countries.</li>
+              <li>Deployed monitoring to reduce downtime by 25%.</li>
+              <li>Maintained 99.99% uptime for core banking applications.</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 class="font-bold text-lg">Application Support Engineer – Armedia LLC</h3>
-          <p class="text-sm text-gray-500">Jul 2023 – Sep 2024</p>
-          <ul class="list-disc list-inside mt-2">
-            <li>Resolved L2/L3 support issues with 99.9% uptime assurance.</li>
-            <li>Automated diagnostics, reducing troubleshooting time by 40%.</li>
-            <li>Improved backend performance via SQL tuning and documentation.</li>
-          </ul>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+        <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
+          <i class="fas fa-graduation-cap"></i> Education & Certifications
+        </h2>
+        <ul class="list-disc list-inside mt-4 text-gray-300">
+          <li>Postgraduate Program in DevOps – Caltech</li>
+          <li>B.Sc. in Information Technology – Valley View University</li>
+          <li>ITIL Foundation</li>
+          <li>Oracle Cloud Infrastructure Foundations Associate</li>
+          <li>Oracle Cloud Architect Associate (In Progress)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+        <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
+          <i class="fas fa-code"></i> Projects & Publications
+        </h2>
+
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-300">
+          <div class="bg-slate-700 shadow p-4 rounded border border-slate-600">
+            <h4 class="font-bold">Monitoring Stack</h4>
+            <p class="text-sm">Grafana + Prometheus deployment with alerting on AWS EC2.</p>
+          </div>
+          <div class="bg-slate-700 shadow p-4 rounded border border-slate-600">
+            <h4 class="font-bold">Automation Scripts</h4>
+            <p class="text-sm">Shell scripts to automate diagnostic checks on Linux servers.</p>
+          </div>
         </div>
-        <div>
-          <h3 class="font-bold text-lg">Technical Operations Engineer – Binance</h3>
-          <p class="text-sm text-gray-500">Feb 2022 – Jun 2023</p>
-          <ul class="list-disc list-inside mt-2">
-            <li>Maintained HA trading systems and improved API latency.</li>
-            <li>Integrated observability tools reducing incidents by 20%.</li>
-            <li>Created runbooks and collaborated with product teams.</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold text-lg">Team Lead & Support Engineer – Ecobank</h3>
-          <p class="text-sm text-gray-500">Oct 2016 – Feb 2022</p>
-          <ul class="list-disc list-inside mt-2">
-            <li>Led Tier 1–2 support across 33 African countries.</li>
-            <li>Deployed monitoring to reduce downtime by 25%.</li>
-            <li>Maintained 99.99% uptime for core banking applications.</li>
+
+        <div class="mt-8">
+          <h3 class="text-xl font-bold mb-2 text-cyan-300">Publications</h3>
+          <ul class="list-disc list-inside text-sm">
+            <li>
+              <strong>Improving the Security Measures on Grid Computing</strong><br />
+              <em>International Journal of Computer Applications · Dec 1, 2013</em><br />
+              <a href="https://www.ijcaonline.org/archives/volume83/number9/14474-2490/" target="_blank" class="text-cyan-400 underline">
+                Read Publication
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
     <section class="mb-12">
-      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2">Education & Certifications</h2>
-      <ul class="list-disc list-inside mt-4">
-        <li>Postgraduate Program in DevOps – Caltech</li>
-        <li>B.Sc. in Information Technology – Valley View University</li>
-        <li>ITIL Foundation</li>
-        <li>Oracle Cloud Infrastructure Foundations Associate</li>
-        <li>AWS Certified Solutions Architect Associate (In Progress)</li>
-        <li>Oracle Cloud Architect Associate (In Progress)</li>
-      </ul>
-    </section>
-
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2">Publications</h2>
-  <ul class="list-disc list-inside mt-4 text-sm text-gray-700">
-    <li>
-      <strong>Improving the Security Measures on Grid Computing</strong><br />
-      <em>International Journal of Computer Applications · Dec 1, 2013</em><br />
-      <a href="https://www.ijcaonline.org/archives/volume83/number9/14474-2490/" target="_blank" class="text-blue-600 underline">
-        Read Publication
-      </a>
-    </li>
-  </ul>
-</section>
-
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2">Projects</h2>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-    <div class="bg-white shadow p-4 rounded border">
-      <h3 class="font-bold">Monitoring Stack</h3>
-      <p class="text-sm text-gray-600">Grafana Loki + Prometheus deployment with alerting on K8.</p>
-      <p class="text-sm text-gray-600">Splunk monitoring deployment with alerting on AWS EC2.</p>
-    </div>
-    <div class="bg-white shadow p-4 rounded border">
-      <h3 class="font-bold">Automation Scripts</h3>
-      <p class="text-sm text-gray-600">Shell scripts to automate diagnostic checks on Linux servers.</p>
-    </div>
-  </div>
-</section>    
-
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-2">Contact Me</h2>
-  <form action="https://formspree.io/f/xdkgrjoa" method="POST" class="mt-4 grid gap-4 max-w-xl mx-auto">
+      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+        <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
+          <i class="fas fa-envelope"></i> Contact Me
+        </h2>
+          <form action="https://formspree.io/f/xdkgrjoa" method="POST" class="mt-4 grid gap-4 max-w-xl mx-auto">
   <input type="text" name="name" placeholder="Your Name" required class="p-2 border rounded" />
   <input type="email" name="email" placeholder="Your Email" required class="p-2 border rounded" />
   <textarea name="message" placeholder="Your Message" rows="5" required class="p-2 border rounded"></textarea>
   <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
 </form>
-</section>
+      </div>
+    </section>
 
-
-
-<footer class="text-center text-sm text-gray-500 border-t pt-4">
+    <footer class="text-center text-sm text-gray-400 border-t border-slate-700 pt-4">
       &copy; 2025 Edem Kporha. All rights reserved.
     </footer>
   </main>
