@@ -6,12 +6,43 @@
   <title>Edem Kporha | Technical Support & DevOps Consultant</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <!-- Vanta and Three.js Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    #vanta-bg {
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     @keyframes gradient {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+
     .animated-gradient {
       background: linear-gradient(-45deg, #1e293b, #0f172a, #1e3a8a, #0ea5e9);
       background-size: 400% 400%;
@@ -19,20 +50,22 @@
     }
   </style>
 </head>
-<body class="animated-gradient text-gray-100 font-sans">
-  <main class="min-h-screen px-6 py-12 max-w-6xl mx-auto">
-    <header class="text-center mb-12">
-      <img src="profile.jpg" alt="Edem Kporha" class="mx-auto w-32 h-32 rounded-full border-4 border-cyan-400 mb-4" />
-      <h1 class="text-4xl font-bold text-cyan-300">Edem Kporha</h1>
-      <p class="text-lg mt-2">Technical Support Engineer | DevOps Consultant</p>
-      <p class="mt-1 text-sm text-gray-300">Canyon Country, CA | edem.kporha@gmail.com | (213) 995-7170</p>
+<body>
+  <div id="vanta-bg">
+    <main class="min-h-screen px-6 py-12 max-w-6xl mx-auto text-gray-100 font-sans">
+      <!-- Header -->
+      <header class="text-center mb-16">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 fade-in">Edem Kporha</h1>
+        <p class="text-lg md:text-2xl fade-in">Technical Support & DevOps Consultant</p>
+		 <p class="mt-1 text-sm text-gray-300">Canyon Country, CA | edem.kporha@gmail.com | (213) 995-7170</p>
       <a href="https://www.linkedin.com/in/edemkporha/" target="_blank" class="text-cyan-400 hover:underline mt-1 block">
         <i class="fab fa-linkedin"></i> LinkedIn Profile
       </a>
-    </header>
+      </header>
 
-    <section class="mb-12">
-      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+      <!-- About -->
+      <section class="mb-16 fade-in">
+        <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
         <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
           <i class="fas fa-user-tie"></i> Professional Summary
         </h2>
@@ -42,10 +75,11 @@
           management, and customer-centric support within finance and cloud-based platforms.
         </p>
       </div>
-    </section>
+      </section>
 
-    <section class="mb-12">
-      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+      <!-- Skills -->
+      <section class="mb-16 fade-in">
+       <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
         <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
           <i class="fas fa-cogs"></i> Core Competencies
         </h2>
@@ -58,10 +92,11 @@
           <li>API Debugging: REST, MQ, WebLogic</li>
         </ul>
       </div>
-    </section>
+      </section>
 
-    <section class="mb-12">
-      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+      <!-- Experience -->
+      <section class="mb-16 fade-in">
+        <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
         <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
           <i class="fas fa-briefcase"></i> Professional Experience
         </h2>
@@ -102,12 +137,13 @@
               <li>Maintained 99.99% uptime for core banking applications.</li>
             </ul>
           </div>
-        </div>
       </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="mb-12">
-      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+      <!-- Education -->
+      <section class="mb-16 fade-in">
+       <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
         <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
           <i class="fas fa-graduation-cap"></i> Education & Certifications
         </h2>
@@ -119,9 +155,9 @@
           <li>Oracle Cloud Architect Associate (In Progress)</li>
         </ul>
       </div>
-    </section>
-
-    <section class="mb-12">
+      </section>
+	  
+	   <section class="mb-16 fade-in">
       <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
         <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
           <i class="fas fa-code"></i> Projects & Publications
@@ -153,8 +189,9 @@
       </div>
     </section>
 
-    <section class="mb-12">
-      <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
+      <!-- Contact -->
+      <section class="mb-16 fade-in">
+        <div class="bg-slate-800 p-6 rounded-lg shadow-lg border border-slate-700">
         <h2 class="text-3xl font-semibold text-cyan-400 border-b border-slate-600 pb-2 flex items-center gap-2">
           <i class="fas fa-envelope"></i> Contact Me
         </h2>
@@ -165,11 +202,45 @@
   <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
 </form>
       </div>
-    </section>
+      </section>
 
-    <footer class="text-center text-sm text-gray-400 border-t border-slate-700 pt-4">
-      &copy; 2025 Edem Kporha. All rights reserved.
-    </footer>
-  </main>
+      <!-- Footer -->
+      <footer class="text-center text-sm text-gray-500 mt-16 fade-in">
+        <p>© 2025 Edem Kporha. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    VANTA.NET({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x00ffff,
+      backgroundColor: 0x0f172a,
+      points: 12.0,
+      maxDistance: 20.0,
+      spacing: 16.0
+    });
+
+    // Fade-in on scroll
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
 </body>
 </html>
